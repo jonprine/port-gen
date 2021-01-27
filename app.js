@@ -140,10 +140,10 @@ const promptUser = () => {
   .then(portfolioData => {
     const pageHTML = generatePage(portfolioData);
 
-    // fs.writeFile('./index.html', pageHTML, err => {
-    //   if (err) throw new Error(err);
+    fs.writeFile('./index.html', pageHTML, err => {
+      if (err) throw new Error(err);
 
-    // });
+    });
   });
 
   
